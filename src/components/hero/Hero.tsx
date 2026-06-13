@@ -1,20 +1,25 @@
 import Container from "../shared/Container";
 import NeuralBackground from "./NeuralBackground";
 import DashboardMockup from "./DashboardMockup";
+import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden">
+    <section id="home"className="relative overflow-hidden ">
       <NeuralBackground />
 
       <Container>
-        <div className="grid min-h-[700px] items-center gap-12 lg:grid-cols-2">
-          <div>
-            <p className="mb-4 text-sm uppercase tracking-widest text-indigo-400">
+        <div className="grid min-h-200 items-center gap-16 lg:grid-cols-[1fr_1fr]">
+          <div className="max-w-2xl ">
+            <p className="px-4 py-2 text-sm uppercase tracking-widest text-indigo-400">
               Software • AI • Automation
             </p>
 
-            <h1 className="mb-6 text-5xl font-bold leading-tight text-white md:text-7xl">
+            <div className="mb-6 inline-flex items-center rounded-full border border-indigo-500/20 bg-indigo-500/10 px-3 py-2 text-sm text-indigo-300">
+              Helping Businesses Build, Automate & Scale
+            </div>
+
+            <h1 className="mb-6 text-5xl font-bold leading-[1.05] text-white md:text-6xl xl:text-7xl" >
               Transforming Businesses Through{" "}
               <span className="text-indigo-500">
                 Software
@@ -34,15 +39,7 @@ export default function Hero() {
               transformation solutions.
             </p>
 
-            <div className="flex flex-wrap gap-4">
-              <button className="rounded-full bg-indigo-600 px-6 py-3 font-medium text-white">
-                Start Your Project
-              </button>
-
-              <button className="rounded-full border border-white/20 px-6 py-3 font-medium text-white">
-                Explore Services
-              </button>
-            </div>
+           
           </div>
 
           <div>

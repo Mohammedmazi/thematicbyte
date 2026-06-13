@@ -1,5 +1,6 @@
 import Container from "../shared/Container";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -31,14 +32,14 @@ export default function Navbar() {
 
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-300">
             <a
-  href="#"
+  href="#home"
   className="transition hover:text-white"
 >
   Home
 </a>
 
 <a
-  href="#"
+  href="#services"
   className="transition hover:text-white"
 >
 Services
@@ -47,7 +48,7 @@ Services
 
 
 <a
-  href="#"
+  href="#solutions"
   className="transition hover:text-white"
 >
   Solutions
@@ -56,7 +57,7 @@ Services
 
 
 <a
-  href="#"
+  href="#about"
   className="transition hover:text-white"
 >
   
@@ -68,7 +69,7 @@ Services
 
 
 <a
-  href="#"
+  href="#contact"
   className="transition hover:text-white"
 >
   Contact
@@ -77,9 +78,12 @@ Services
 
           </nav>
 
-         <button className="rounded-full bg-gradient-to-r from-[#1237d6] via-[#1b6cff] to-[#20d4ff] px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(32,212,255,0.35)]">
+    <Link
+  href="/contact"
+  className="rounded-full bg-indigo-600 px-5 py-2 text-white"
+>
   Book Consultation
-</button>
+</Link>
         </div>
       </Container>
     </header>

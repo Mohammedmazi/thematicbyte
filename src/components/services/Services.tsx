@@ -23,7 +23,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-32">
+    <section id="services"className="py-32">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="mb-4 text-center text-5xl font-bold text-white">
           Our Services
